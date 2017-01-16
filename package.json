@@ -1,0 +1,39 @@
+{
+  "name": "google-sheet-to-data",
+  "description": "convert google spread sheet to json or matrix",
+  "engines": {
+    "node": ">= 6.3.0"
+  },
+  "author": {
+    "name": "h.hyunwoo",
+    "email": "h.hyunwoo@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hyunwoo/GoogleSheetToData.git"
+  },
+  "bugs": {
+    "url": "github.com/hyunwoo/GoogleSheetToData/issues"
+  },
+  "main": "./lib/google-sheet-to-data",
+  "version": "0.0.6",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "google-spreadsheet": "^2.0.3",
+    "lodash": "^4.17.4"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "keywords": [
+    "googlespreadsheet",
+    "google spread sheet",
+    "google spread sheet json",
+    "spreadsheet"
+  ]
+}
