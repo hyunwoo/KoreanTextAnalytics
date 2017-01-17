@@ -25,7 +25,7 @@
 var mod = require('korean-text-analytics');
 var task = new mod.TaskQueue();
 
-mod.ExecuteMorphModule('안녕하세요. 여기는 수원 입니다.', function (err, rep) {
+mod.ExecuteMorphModule('안녕하세요. 여기는 대한민국 입니다.', function (err, rep) {
 	console.log(err, rep);
 })
 
@@ -144,7 +144,7 @@ NodeJS Wrapper 제작중
 contact : h.hyunwoo@gmail.com
 - 본 모듈은 초기 개발 단계라 미흡한 점이 많습니다.
 - 에러에 대한 내용이나 건의에 대하여 메일 주시면 대단히 감사하겠습니다.
-
+- 간단한 테스트 소스는 node_modules/korean-text-analytics/test.js 를 참고하세요
 
 
 <i>License : Apache License 2.0</i>
