@@ -20,10 +20,35 @@
 ##### JAVA 1.7 이상이 설치 되어 있어야 합니다.
 
 #### 1.1 사용예제
-##### 1.1.1 단어와 태그 출력
+##### 1.1.1 한 문장 형태소 분석
+```javascript
+var mod = require('korean-text-analytics');
+var task = new mod.TaskQueue();
+
+mod.ExecuteMorphModule('안녕하세요. 여기는 수원 입니다.', function (err, rep) {
+	console.log(err, rep);
+})
+
+/* 결과 :
+rep : {
+	morphed: [
+     { word: '안녕하세요', tag: 'NNP' },
+     { word: '.', tag: 'SF' },
+     { word: '여기', tag: 'NP' },
+     { word: '는', tag: 'JX' },
+     { word: '대한민국', tag: 'NNP' },
+     { word: '이', tag: 'VCP' },
+     { word: 'ㅂ니다', tag: 'EF' },
+     { word: '.', tag: 'SF' }
+    ],
+ 	origin: '안녕하세요. 여기는 대한민국 입니다. '
+}
+*/
+```
+##### 1.1.1 여러 문장에 대한 단어와 태그 출력
 목적 : 여러 텍스트를 한번에 처리하고 추가적인 정보 없이 단어와 품사를 확인
 ```javascript
-var mod = require('./korean-text-analytics');
+var mod = require('korean-text-analytics');
 var task = new mod.TaskQueue();
 
 task.addSteamTask('동해물과 백두산이 마르고 닳도록', {comment: '추가 정보'});
@@ -33,8 +58,8 @@ task.exec(function (err, rep) {
     console.log(tags);
 });
 
-// result :
-[
+/* 결과
+rep : [
 	{ word: '동해물과 백두산이', tag: 'NNP' },
     { word: '마르', tag: 'VV' },
     { word: '고', tag: 'EC' },
@@ -48,7 +73,7 @@ task.exec(function (err, rep) {
     { word: '우리나라', tag: 'NNG' },
     { word: '만세', tag: 'NNG' }
 ]
-
+*/
 ```
 
 
@@ -64,38 +89,40 @@ task.exec(function (err, rep) {
     console.log(err, JSON.stringify(rep, null, 4));
 });
 
-// 결과
-result :{
-    contents : [
-        {
-            source : 입력된 문단
-            addition : 추가 정보/*입력한 추가 정보가 출력*/
-            morphed : [
-                {
-                    wording : 입력된 문장 ...
-                    tags : [
-                        {
-                            "word":단어,
-                            "tag":품사
-                        }
-                        ...
-                    ]
-                },
-                {
+/* 결과
+rep : JSON ARRAY
+[
+    {
+        "source": "동해물과 백두산이 마르고 닳도록",
+        "addition": {
+            "comment": "추가 정보"
+        },
+        "morphed": [
+            {
+                "sentence": "동해물과 백두산이 마르고 닳도록",
+                "words": [
+                    {
+                        "word": "동해물과 백두산이",
+                        "tag": "NNP"
+                    },
+                    {
+                        "word": "마르",
+                        "tag": "VV"
+                    },
                     ...
-                }
-
-            ]
-        }
-        ...
-    ]
-}
+                ]
+            }
+        ]
+    },
+    ....
+]
+*/
 ```
 
 
 #### 1.2 사용자 사전 추가
 ```
-문서 작성중
+NodeJS Wrapper 제작중
 ```
 #### 1.3 품사의 빈도 카운트
 ```
@@ -104,7 +131,7 @@ result :{
 
 ### 2.0 문서의 단어간 연관성 추출
 ```
-문서 작성중
+NodeJS Wrapper 제작중
 ```
 
 ### 3.0 Topic Modeling (LDA)
@@ -113,4 +140,20 @@ result :{
 ```
 
 
+
+contact : h.hyunwoo@gmail.com
+- 본 모듈은 초기 개발 단계라 미흡한 점이 많습니다.
+- 에러에 대한 내용이나 건의에 대하여 메일 주시면 대단히 감사하겠습니다.
+
+
+
 <i>License : Apache License 2.0</i>
+
+
+##
+### TASK.
+- [x] 형태소 분석기 성능 개선
+- [x] LDA Javascript Wrapper Testing..
+- [x] 사용자 사전 추가 Javscript Wrapper 제작
+- [o] Add Simple Morph Wrapper.
+- [o] Morph Result Reformat
