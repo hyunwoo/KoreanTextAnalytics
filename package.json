@@ -22,7 +22,9 @@
   },
   "dependencies": {
     "google-spreadsheet": "^2.0.3",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "python-shell": "^0.4.0",
+    "text-encoding": "^0.6.4"
   },
   "licenses": [
     {
