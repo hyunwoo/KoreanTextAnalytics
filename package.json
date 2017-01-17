@@ -1,6 +1,6 @@
 {
   "name": "korean-text-analytics",
-  "description": "Korean Text Analytics for Nodejs \n �ѱ��� �ڿ��� ó�� �� �ؽ�Ʈ ���̴��� ���� �����Դϴ�.",
+  "description": "Korean Text Analytics for Nodejs \n 한글의 자연어 처리와 텍스트 마이닝을 지원하는 기본기능을 탑재한 모듈",
   "engines": {
     "node": ">= 6.9.4"
   },
@@ -16,7 +16,7 @@
     "url": "github.com/hyunwoo/KoreanTextAnalytics/issues"
   },
   "main": "./lib/korean-text-analytics",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -36,6 +36,8 @@
     "korean text analytics",
     "korean morph",
     "korean morphological analysis",
-    "korean stem"
+    "korean stem",
+    "한글 분석",
+    "형태소 분석"
   ]
 }
