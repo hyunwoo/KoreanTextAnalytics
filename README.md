@@ -2,111 +2,111 @@
 ## test version.
 
 
-ÀÌ ¸ðµâÀº nodejs¿¡¼­ ÇÑ±¹¾î¿¡ ´ëÇÑ ÀÚ¿¬¾î Ã³¸®¸¦ ÁøÇàÇÏ°í ÅØ½ºÆ® ¸¶ÀÌ´×ÀÇ ±âº» ±â´ÉµéÀ» Á¦°øÇÏ±â À§ÇØ °³¹ßµÇ¾î Áö°í ÀÖ½À´Ï´Ù.
+ì´ ëª¨ë“ˆì€ nodejsì—ì„œ í•œêµ­ì–´ì— ëŒ€í•œ ìžì—°ì–´ ì²˜ë¦¬ë¥¼ ì§„í–‰í•˜ê³  í…ìŠ¤íŠ¸ ë§ˆì´ë‹ì˜ ê¸°ë³¸ ê¸°ëŠ¥ë“¤ì„ ì œê³µí•˜ê¸° ìœ„í•´ ê°œë°œë˜ì–´ ì§€ê³  ìžˆìŠµë‹ˆë‹¤.
 
-À¯ÀÇ»çÇ× .
+ìœ ì˜ì‚¬í•­ .
 
-- Windows 10°ú Mac osX ¿¡¼­ Å×½ºÆ®¸¦ ÁøÇàÇÏ¿´½À´Ï´Ù. ÀÌ¿ÜÀÇ ÇÃ·§Æû¿¡¼­´Â Å×½ºÆ®¸¦ ÁøÇàÇÏÁö ¾Ê¾Ò½À´Ï´Ù.
-- iconv ¸ðµâ¿¡ ÀÇÁ¸¼ºÀÌ ÀÖ½À´Ï´Ù.
-- ÇüÅÂ¼Ò ºÐ¼®°ú ÅäÇÈ ¸ðµ¨¸µ(LDA)¿¡ Java Library°¡ »ç¿ëµÇ°í ÀÖ½À´Ï´Ù.
-- Å×½ºÆ® ¹öÀüÀÌ¶ó ÇüÅÂ¼Ò ºÐ¼®¿¡ ´ëÇÑ ¼º´ÉÀ» ±â´ë ÇÒ ¼ö ¾ø½À´Ï´Ù. (ÃßÈÄ ¼öÁ¤ ¿¹Á¤)
+- Windows 10ê³¼ Mac osX ì—ì„œ í…ŒìŠ¤íŠ¸ë¥¼ ì§„í–‰í•˜ì˜€ìŠµë‹ˆë‹¤. ì´ì™¸ì˜ í”Œëž«í¼ì—ì„œëŠ” í…ŒìŠ¤íŠ¸ë¥¼ ì§„í–‰í•˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.
+- iconv ëª¨ë“ˆì— ì˜ì¡´ì„±ì´ ìžˆìŠµë‹ˆë‹¤.
+- í˜•íƒœì†Œ ë¶„ì„ê³¼ í† í”½ ëª¨ë¸ë§(LDA)ì— Java Libraryê°€ ì‚¬ìš©ë˜ê³  ìžˆìŠµë‹ˆë‹¤.
+- í…ŒìŠ¤íŠ¸ ë²„ì „ì´ë¼ í˜•íƒœì†Œ ë¶„ì„ì— ëŒ€í•œ ì„±ëŠ¥ì„ ê¸°ëŒ€ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. (ì¶”í›„ ìˆ˜ì • ì˜ˆì •)
 
 
-## 1. ÇüÅÂ¼Ò ºÐ¼®
+## 1. í˜•íƒœì†Œ ë¶„ì„
 
-#### Komoran ÇüÅÂ¼Ò ºÐ¼®±â¸¦ »ç¿ëÇÏ°í ÀÖ½À´Ï´Ù.
+#### Komoran í˜•íƒœì†Œ ë¶„ì„ê¸°ë¥¼ ì‚¬ìš©í•˜ê³  ìžˆìŠµë‹ˆë‹¤.
 - Komoran : http://www.shineware.co.kr/?page_id=835
-- ÀÌ¿ÜÀÇ ÇüÅÂ¼Ò ºÐ¼®±â(²¿²¿¸¶, ÇÑ³ª´® µî)¿¡ ´ëÇØ¼± ÃßÈÄ Ãß°¡ ÇÒ ¿¹Á¤ÀÔ´Ï´Ù. - ¶óÀÌ¼¾½º È®ÀÎ ÇÊ¿ä
-##### JAVA 1.7 ÀÌ»óÀÌ ¼³Ä¡ µÇ¾î ÀÖ¾î¾ß ÇÕ´Ï´Ù.
+- ì´ì™¸ì˜ í˜•íƒœì†Œ ë¶„ì„ê¸°(ê¼¬ê¼¬ë§ˆ, í•œë‚˜ëˆ” ë“±)ì— ëŒ€í•´ì„  ì¶”í›„ ì¶”ê°€ í•  ì˜ˆì •ìž…ë‹ˆë‹¤. - ë¼ì´ì„¼ìŠ¤ í™•ì¸ í•„ìš”
+##### JAVA 1.7 ì´ìƒì´ ì„¤ì¹˜ ë˜ì–´ ìžˆì–´ì•¼ í•©ë‹ˆë‹¤.
 
-#### 1.1 »ç¿ë¿¹Á¦
-##### 1.1.1 ÇÑ ¹®Àå ÇüÅÂ¼Ò ºÐ¼®
+#### 1.1 ì‚¬ìš©ì˜ˆì œ
+##### 1.1.1 í•œ ë¬¸ìž¥ í˜•íƒœì†Œ ë¶„ì„
 ```javascript
 var mod = require('korean-text-analytics');
 var task = new mod.TaskQueue();
 
-mod.ExecuteMorphModule('¾È³çÇÏ¼¼¿ä. ¿©±â´Â ¼ö¿ø ÀÔ´Ï´Ù.', function (err, rep) {
+mod.ExecuteMorphModule('ì•ˆë…•í•˜ì„¸ìš”. ì—¬ê¸°ëŠ” ìˆ˜ì› ìž…ë‹ˆë‹¤.', function (err, rep) {
 	console.log(err, rep);
 })
 
-/* °á°ú :
+/* ê²°ê³¼ :
 rep : {
 	morphed: [
-     { word: '¾È³çÇÏ¼¼¿ä', tag: 'NNP' },
+     { word: 'ì•ˆë…•í•˜ì„¸ìš”', tag: 'NNP' },
      { word: '.', tag: 'SF' },
-     { word: '¿©±â', tag: 'NP' },
-     { word: '´Â', tag: 'JX' },
-     { word: '´ëÇÑ¹Î±¹', tag: 'NNP' },
-     { word: 'ÀÌ', tag: 'VCP' },
-     { word: '¤²´Ï´Ù', tag: 'EF' },
+     { word: 'ì—¬ê¸°', tag: 'NP' },
+     { word: 'ëŠ”', tag: 'JX' },
+     { word: 'ëŒ€í•œë¯¼êµ­', tag: 'NNP' },
+     { word: 'ì´', tag: 'VCP' },
+     { word: 'ã…‚ë‹ˆë‹¤', tag: 'EF' },
      { word: '.', tag: 'SF' }
     ],
- 	origin: '¾È³çÇÏ¼¼¿ä. ¿©±â´Â ´ëÇÑ¹Î±¹ ÀÔ´Ï´Ù. '
+ 	origin: 'ì•ˆë…•í•˜ì„¸ìš”. ì—¬ê¸°ëŠ” ëŒ€í•œë¯¼êµ­ ìž…ë‹ˆë‹¤. '
 }
 */
 ```
-##### 1.1.1 ¿©·¯ ¹®Àå¿¡ ´ëÇÑ ´Ü¾î¿Í ÅÂ±× Ãâ·Â
-¸ñÀû : ¿©·¯ ÅØ½ºÆ®¸¦ ÇÑ¹ø¿¡ Ã³¸®ÇÏ°í Ãß°¡ÀûÀÎ Á¤º¸ ¾øÀÌ ´Ü¾î¿Í Ç°»ç¸¦ È®ÀÎ
+##### 1.1.1 ì—¬ëŸ¬ ë¬¸ìž¥ì— ëŒ€í•œ ë‹¨ì–´ì™€ íƒœê·¸ ì¶œë ¥
+ëª©ì  : ì—¬ëŸ¬ í…ìŠ¤íŠ¸ë¥¼ í•œë²ˆì— ì²˜ë¦¬í•˜ê³  ì¶”ê°€ì ì¸ ì •ë³´ ì—†ì´ ë‹¨ì–´ì™€ í’ˆì‚¬ë¥¼ í™•ì¸
 ```javascript
 var mod = require('korean-text-analytics');
 var task = new mod.TaskQueue();
 
-task.addSteamTask('µ¿ÇØ¹°°ú ¹éµÎ»êÀÌ ¸¶¸£°í ´âµµ·Ï', {comment: 'Ãß°¡ Á¤º¸'});
-task.addSteamTask('ÇÏ´À´ÔÀÌ º¸¿ìÇÏ»ç ¿ì¸®³ª¶ó¸¸¼¼', {comment: 'Ãß°¡ Á¤º¸'});
+task.addSteamTask('ë™í•´ë¬¼ê³¼ ë°±ë‘ì‚°ì´ ë§ˆë¥´ê³  ë‹³ë„ë¡', {comment: 'ì¶”ê°€ ì •ë³´'});
+task.addSteamTask('í•˜ëŠë‹˜ì´ ë³´ìš°í•˜ì‚¬ ìš°ë¦¬ë‚˜ë¼ë§Œì„¸', {comment: 'ì¶”ê°€ ì •ë³´'});
 task.exec(function (err, rep) {
     var tags = mod.ResultOnlyTags(rep);
     console.log(tags);
 });
 
-/* °á°ú
+/* ê²°ê³¼
 rep : [
-	{ word: 'µ¿ÇØ¹°°ú ¹éµÎ»êÀÌ', tag: 'NNP' },
-    { word: '¸¶¸£', tag: 'VV' },
-    { word: '°í', tag: 'EC' },
-    { word: '´â', tag: 'VV' },
-    { word: 'µµ·Ï', tag: 'EC' },
-    { word: 'ÇÏ´À´Ô', tag: 'NNG' },
-    { word: 'ÀÌ', tag: 'JKS' },
-    { word: 'º¸¿ì', tag: 'NNG' },
-    { word: 'ÇÏ', tag: 'XSV' },
-    { word: '»ç', tag: 'EC' },
-    { word: '¿ì¸®³ª¶ó', tag: 'NNG' },
-    { word: '¸¸¼¼', tag: 'NNG' }
+	{ word: 'ë™í•´ë¬¼ê³¼ ë°±ë‘ì‚°ì´', tag: 'NNP' },
+    { word: 'ë§ˆë¥´', tag: 'VV' },
+    { word: 'ê³ ', tag: 'EC' },
+    { word: 'ë‹³', tag: 'VV' },
+    { word: 'ë„ë¡', tag: 'EC' },
+    { word: 'í•˜ëŠë‹˜', tag: 'NNG' },
+    { word: 'ì´', tag: 'JKS' },
+    { word: 'ë³´ìš°', tag: 'NNG' },
+    { word: 'í•˜', tag: 'XSV' },
+    { word: 'ì‚¬', tag: 'EC' },
+    { word: 'ìš°ë¦¬ë‚˜ë¼', tag: 'NNG' },
+    { word: 'ë§Œì„¸', tag: 'NNG' }
 ]
 */
 ```
 
 
-##### 1.1.2 ÀüÃ¼ ÇüÅÂ¼Ò ºÐ¼® °á°ú Ãâ·Â
-¸ñÀû : ¿©·¯ ÅØ½ºÆ®¸¦ ÇÑ¹ø¿¡ Ã³¸®ÇÏ°í ¿ø¹®°ú Ãß°¡ÀûÀÎ Á¤º¸¸¦ ÀúÀåÇÑ »óÅÂ·Î ÇüÅÂ¼Ò ºÐ¼®ÀÇ °á°ú¸¦ ¾ò°íÀÚ ÇÔ.
+##### 1.1.2 ì „ì²´ í˜•íƒœì†Œ ë¶„ì„ ê²°ê³¼ ì¶œë ¥
+ëª©ì  : ì—¬ëŸ¬ í…ìŠ¤íŠ¸ë¥¼ í•œë²ˆì— ì²˜ë¦¬í•˜ê³  ì›ë¬¸ê³¼ ì¶”ê°€ì ì¸ ì •ë³´ë¥¼ ì €ìž¥í•œ ìƒíƒœë¡œ í˜•íƒœì†Œ ë¶„ì„ì˜ ê²°ê³¼ë¥¼ ì–»ê³ ìž í•¨.
 ```javascript
 var mod = require('korean-text-analytics');
 var task = new mod.TaskQueue();
 
-task.addSteamTask('µ¿ÇØ¹°°ú ¹éµÎ»êÀÌ ¸¶¸£°í ´âµµ·Ï');
-task.addSteamTask('ÇÏ´À´ÔÀÌ º¸¿ìÇÏ»ç ¿ì¸®³ª¶ó¸¸¼¼', {comment: 'Ãß°¡ Á¤º¸'}/*µ¥ÀÌÅÍ¿¡ ´ëÇÑ Ãß°¡Á¤º¸¸¦ ÀÔ·Â*/);
+task.addSteamTask('ë™í•´ë¬¼ê³¼ ë°±ë‘ì‚°ì´ ë§ˆë¥´ê³  ë‹³ë„ë¡');
+task.addSteamTask('í•˜ëŠë‹˜ì´ ë³´ìš°í•˜ì‚¬ ìš°ë¦¬ë‚˜ë¼ë§Œì„¸', {comment: 'ì¶”ê°€ ì •ë³´'}/*ë°ì´í„°ì— ëŒ€í•œ ì¶”ê°€ì •ë³´ë¥¼ ìž…ë ¥*/);
 task.exec(function (err, rep) {
     console.log(err, JSON.stringify(rep, null, 4));
 });
 
-/* °á°ú
+/* ê²°ê³¼
 rep : JSON ARRAY
 [
     {
-        "source": "µ¿ÇØ¹°°ú ¹éµÎ»êÀÌ ¸¶¸£°í ´âµµ·Ï",
+        "source": "ë™í•´ë¬¼ê³¼ ë°±ë‘ì‚°ì´ ë§ˆë¥´ê³  ë‹³ë„ë¡",
         "addition": {
-            "comment": "Ãß°¡ Á¤º¸"
+            "comment": "ì¶”ê°€ ì •ë³´"
         },
         "morphed": [
             {
-                "sentence": "µ¿ÇØ¹°°ú ¹éµÎ»êÀÌ ¸¶¸£°í ´âµµ·Ï",
+                "sentence": "ë™í•´ë¬¼ê³¼ ë°±ë‘ì‚°ì´ ë§ˆë¥´ê³  ë‹³ë„ë¡",
                 "words": [
                     {
-                        "word": "µ¿ÇØ¹°°ú ¹éµÎ»êÀÌ",
+                        "word": "ë™í•´ë¬¼ê³¼ ë°±ë‘ì‚°ì´",
                         "tag": "NNP"
                     },
                     {
-                        "word": "¸¶¸£",
+                        "word": "ë§ˆë¥´",
                         "tag": "VV"
                     },
                     ...
@@ -120,30 +120,30 @@ rep : JSON ARRAY
 ```
 
 
-#### 1.2 »ç¿ëÀÚ »çÀü Ãß°¡
+#### 1.2 ì‚¬ìš©ìž ì‚¬ì „ ì¶”ê°€
 ```
-NodeJS Wrapper Á¦ÀÛÁß
+NodeJS Wrapper ì œìž‘ì¤‘
 ```
-#### 1.3 Ç°»çÀÇ ºóµµ Ä«¿îÆ®
+#### 1.3 í’ˆì‚¬ì˜ ë¹ˆë„ ì¹´ìš´íŠ¸
 ```
-¹®¼­ ÀÛ¼ºÁß
+ë¬¸ì„œ ìž‘ì„±ì¤‘
 ```
 
-### 2.0 ¹®¼­ÀÇ ´Ü¾î°£ ¿¬°ü¼º ÃßÃâ
+### 2.0 ë¬¸ì„œì˜ ë‹¨ì–´ê°„ ì—°ê´€ì„± ì¶”ì¶œ
 ```
-NodeJS Wrapper Á¦ÀÛÁß
+NodeJS Wrapper ì œìž‘ì¤‘
 ```
 
 ### 3.0 Topic Modeling (LDA)
 ```
-¹®¼­ ÀÛ¼ºÁß
+ë¬¸ì„œ ìž‘ì„±ì¤‘
 ```
 
 
 
 contact : h.hyunwoo@gmail.com
-- º» ¸ðµâÀº ÃÊ±â °³¹ß ´Ü°è¶ó ¹ÌÈíÇÑ Á¡ÀÌ ¸¹½À´Ï´Ù.
-- ¿¡·¯¿¡ ´ëÇÑ ³»¿ëÀÌ³ª °ÇÀÇ¿¡ ´ëÇÏ¿© ¸ÞÀÏ ÁÖ½Ã¸é ´ë´ÜÈ÷ °¨»çÇÏ°Ú½À´Ï´Ù.
+- ë³¸ ëª¨ë“ˆì€ ì´ˆê¸° ê°œë°œ ë‹¨ê³„ë¼ ë¯¸í¡í•œ ì ì´ ë§ŽìŠµë‹ˆë‹¤.
+- ì—ëŸ¬ì— ëŒ€í•œ ë‚´ìš©ì´ë‚˜ ê±´ì˜ì— ëŒ€í•˜ì—¬ ë©”ì¼ ì£¼ì‹œë©´ ëŒ€ë‹¨ížˆ ê°ì‚¬í•˜ê² ìŠµë‹ˆë‹¤.
 
 
 
@@ -152,8 +152,8 @@ contact : h.hyunwoo@gmail.com
 
 ##
 ### TASK.
-- [x] ÇüÅÂ¼Ò ºÐ¼®±â ¼º´É °³¼±
+- [x] í˜•íƒœì†Œ ë¶„ì„ê¸° ì„±ëŠ¥ ê°œì„ 
 - [x] LDA Javascript Wrapper Testing..
-- [x] »ç¿ëÀÚ »çÀü Ãß°¡ Javscript Wrapper Á¦ÀÛ
+- [x] ì‚¬ìš©ìž ì‚¬ì „ ì¶”ê°€ Javscript Wrapper ì œìž‘
 - [o] Add Simple Morph Wrapper.
 - [o] Morph Result Reformat

@@ -16,7 +16,7 @@
     "url": "github.com/hyunwoo/KoreanTextAnalytics/issues"
   },
   "main": "./lib/korean-text-analytics",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "scripts": {
     "start": "node ./bin/www"
   },
