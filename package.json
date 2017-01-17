@@ -1,8 +1,8 @@
 {
-  "name": "google-sheet-to-data",
-  "description": "convert google spread sheet to json or matrix",
+  "name": "korean-text-analytics",
+  "description": "Korean Text Analytics for Nodejs \n �ѱ��� �ڿ��� ó�� �� �ؽ�Ʈ ���̴��� ���� �����Դϴ�.",
   "engines": {
-    "node": ">= 6.3.0"
+    "node": ">= 6.9.4"
   },
   "author": {
     "name": "h.hyunwoo",
@@ -10,32 +10,32 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hyunwoo/GoogleSheetToData.git"
+    "url": "git://github.com/hyunwoo/KoreanTextAnalytics.git"
   },
   "bugs": {
-    "url": "github.com/hyunwoo/GoogleSheetToData/issues"
+    "url": "github.com/hyunwoo/KoreanTextAnalytics/issues"
   },
-  "main": "./lib/google-sheet-to-data",
-  "version": "0.0.6",
+  "main": "./lib/korean-text-analytics",
+  "version": "0.0.3",
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "google-spreadsheet": "^2.0.3",
+    "iconv": "^2.2.1",
+    "iconv-lite": "^0.4.15",
     "lodash": "^4.17.4",
-    "python-shell": "^0.4.0",
     "text-encoding": "^0.6.4"
   },
   "licenses": [
     {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
+      "type": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
   "keywords": [
-    "googlespreadsheet",
-    "google spread sheet",
-    "google spread sheet json",
-    "spreadsheet"
+    "korean text analytics",
+    "korean morph",
+    "korean morphological analysis",
+    "korean stem"
   ]
 }
